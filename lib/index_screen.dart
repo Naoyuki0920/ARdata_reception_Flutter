@@ -1,3 +1,4 @@
+import 'package:data_reception/ar_screen.dart';
 import 'package:data_reception/download_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
@@ -15,7 +16,7 @@ class IndexScreen extends StatelessWidget {
                 requestPermission();
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const DownloadScreen()),
+                  MaterialPageRoute(builder: (context) => const ARScreen()),
                 );
               },
               child: const Text("AR表示")),
